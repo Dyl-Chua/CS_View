@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPMC EXP ORDERS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+    <li><a href="/StdMOH">MOH STD ORDERS</a></li>
+    <li><a href="/ExpMOH">MOH EXP ORDERS</a></li>
+    <li><a href="/stdjpmc">JPMC STD ORDERS</a></li>
+    <li><a href="/stdphc">PHC STD ORDERS</a></li>
+    <li><a href="/ImeMoh">MOH IME ORDERS</a></li>
+    <li><a href="/">USERS</a></li>
+
+
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">name</th>
+            <th scope="col">bruhims</th>
+            <th scope="col">kampong</th>
+            <th scope="col">jalan</th>
+            <th scope="col">simpang</th>
+            <th scope="col">house_Number</th>
+            <th scope="col">contact_1</th>
+            <th scope="col">email</th>
+            <th scope="col">qo</th>
+            <th scope="col">radioTOD</th>
+            <th scope="col">BNHC</th>
+            <th scope="col">TUHC</th>
+            <th scope="col">TEHC</th>
+            <th scope="col">BHC</th>
+            <th scope="col">radioDistrict</th>
+            <th scope="col">pm</th>
+            <th scope="col">re</th>
+            <th scope="col">radioNOTI</th>
+            <th scope="col">radioDURATION</th>
+            <th scope="col">dateSubmit</th>
+            <th scope="col">ordertaken</th>
+          </tr>
+    
+        <tbody>
+        <%exp_JpmcOrderList.forEach(exp_JpmcOrder => {%>
+            <tr>
+                <th scope="row"><%= exp_JpmcOrder.name %></th>
+                <td><%= exp_JpmcOrder.bruhims %></td>
+                <td><%= exp_JpmcOrder.kampong %></td>
+                <td><%= exp_JpmcOrder.jalan %></td>
+                <td><%= exp_JpmcOrder.simpang %></td>
+                <td><%= exp_JpmcOrder.house_Number %></td>
+                <td><%= exp_JpmcOrder.contact_1 %></td>
+                <td><%= exp_JpmcOrder.email %></td>
+                <td><%= exp_JpmcOrder.qo %></td>
+                <td><%= exp_JpmcOrder.radioTOD %></td>
+                <td><%= exp_JpmcOrder.BNHC %></td>
+                <td><%= exp_JpmcOrder.TUHC %></td>
+                <td><%= exp_JpmcOrder.TEHC %></td>
+                <td><%= exp_JpmcOrder.BHC %></td>
+                <td><%= exp_JpmcOrder.radioDistrict %></td>
+                <td><%= exp_JpmcOrder.pm %></td>
+                <td><%= exp_JpmcOrder.re %></td>
+                <td><%= exp_JpmcOrder.radioNOTI %></td>
+                <td><%= exp_JpmcOrder.radioDURATION %></td>
+                <td><%= exp_JpmcOrder.dateSubmit %></td>
+                <td><%= exp_JpmcOrder.ordertaken %></td>-->
+            </tr>
+        <%})%>
+        </tbody>
+      </table>
+</body>
+</html>
